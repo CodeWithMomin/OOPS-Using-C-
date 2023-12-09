@@ -3,19 +3,24 @@ using namespace std;
 int main()
 {
     float bmi;
-    float pounds;
+    float kg;
     float height;
-    cout<<"enter your weight in pounds"<<endl;
-    cin>>pounds;
-    cout<<"enter your height in inches"<<endl;
+    cout<<"enter your weight in kilos"<<endl;
+    cin>>kg;
+    cout<<"enter your height in cm's"<<endl;
     cin>>height;
+    float pounds=kg*2.205;   // here converting the kilograms into pounds for better conversion
+    float inchs=height/2.54; // here converting the centimeters into inchs for better conversion
+    
+    
+   
     if(pounds<=0||height<=0)
     {
         cout<<"invalid input";
         }
         else
         {
-            bmi=pounds/(height*height);
+            bmi=(pounds/(inchs*inchs))*703;
             cout<<"your BMI is "<<bmi<<endl;
             }
             
@@ -38,5 +43,4 @@ int main()
             }
             
             
-
 }
