@@ -28,7 +28,7 @@ int main()
             {
                 cout<<" You are Under Weight"<<endl;
             }
-            else if(bmi>18.5 && bmi>=24.9)
+            else if(bmi>18.5 && bmi<=24.9)
             {
                 cout<<"You are Normal"<<endl;
             }
